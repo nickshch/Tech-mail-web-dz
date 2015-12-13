@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+      <form class="form-horizontal" action='' method="POST">
+        <fieldset>
+          <div class="form-group">
+            <!-- Login -->
+            <div class="col-md-8">
+              <label class="control-label"  for="username">Имя пользователя</label>
+            </div>
+            <div class="col-md-5">
+              <input type="login" class="form-control" id="inputLogin3" placeholder="Логин">
+              <p class="help-block">Имя пользователя может содержать любые символы кроме пробелов</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- E-mail -->
+            <div class="col-md-8">
+              <label class="control-label" for="email">E-mail</label>
+            </div>
+            <div class="col-md-5">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <p class="help-block">Ваш E-mail адрес</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- Password -->
+            <div class="col-md-8">
+              <label class="control-label" for="password">Пароль</label>
+            </div>
+            <div class="col-md-5">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+              <p class="help-block">Пароль должен состоять из 4 символов минимум</p>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <!-- Password -->
+            <div class="col-md-8">
+              <label class="control-label"  for="password_confirm">Подтверждение пароля</label>
+            </div>
+            <div class="col-md-5">
+              <input type="password" class="form-control" id="inputPassword-confirm3" placeholder="Пароль">
+              <p class="help-block">Пожалуйста подтвердите пароль</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- Button -->
+            <div class="col-md-5">
+              <button class="btn btn-success" href="#">Зарегестрироваться!</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+{% endblock content %}

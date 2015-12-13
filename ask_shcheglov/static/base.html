@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>bmstu asker!</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <div class="navbar-header"> <a class="navbar-brand" href="#">Вопросник</a> </div>
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Поиск">
+        </div>
+        <button type="submit" class="btn btn-default">Найти</button>
+        <button type="submit" class="btn btn-success">Спросить!</button>
+      </form>
+      <form class="navbar-form navbar-right">
+        <button type="submit" class="btn btn-default">Войти</button>
+        <button type="submit" class="btn btn-default">Регистрация</button>
+      </form>
+    </div> 
+  </div> 
+</nav>
+<div class="ask-body">
+  <div class="asker-header">
+    <h2 class="asker-title">Заголовок</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-8 ask-main">
+    </div>
+    <div class="col-md-4 ask-sidebar">
+      <div class="sidebar-module">
+        <h4>Популярные тэги:</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">MySQL</a></li>
+          <li><a href="#">ngnix</a></li>
+          <li><a href="#">apache</a></li>
+          <li><a href="#">django</a></li>
+          <li><a href="#">C++</a></li>
+        </ol>
+      </div>
+      <div class="sidebar-module">
+        <h4>Популярные имена:</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">Bill Gates</a></li>
+          <li><a href="#">Steave Jobs</a></li>
+          <li><a href="#">Vladimir Putin</a></li>
+        </ol>
+      </div>
+    </div> 
+  </div> 
+</div>
+<footer>
+    Copyright Николай Щеглов
+  </footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

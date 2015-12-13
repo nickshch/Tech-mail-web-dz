@@ -1,0 +1,53 @@
+nickshch@nickshch-UX31A:~$ sudo ab -n 1000 -c 100 http://localhost/question.htmlThis is ApacheBench, Version 2.3 <$Revision: 1638069 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        nginx/1.9.3
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /question.html
+Document Length:        5573 bytes
+
+Concurrency Level:      100
+Time taken for tests:   0.058 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      5816000 bytes
+HTML transferred:       5573000 bytes
+Requests per second:    17267.58 [#/sec] (mean)
+Time per request:       5.791 [ms] (mean)
+Time per request:       0.058 [ms] (mean, across all concurrent requests)
+Transfer rate:          98074.45 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   1.5      0       7
+Processing:     2    5   1.0      5       6
+Waiting:        2    5   1.1      5       6
+Total:          4    5   1.1      5       9
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      6
+  75%      6
+  80%      6
+  90%      6
+  95%      8
+  98%      8
+  99%      9
+ 100%      9 (longest request)

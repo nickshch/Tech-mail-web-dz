@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+{% block content %}
+      <div class="main-question">
+        <div class="row">
+          <div class="col-md-2"> <img class=" img-circle" src="http://lorempixel.com/100/100">
+            <div class="row">
+              <button type="button" id="increaseButton" class="btn btn-success btn-xs">+</button>
+              <input type="text" id="vote" placeholder="vote" readonly />
+              <button type="button" id="decreaseButton" class="btn btn-danger btn-xs">-</button>
+            </div>
+          </div>
+          <div class="col-md-10 question-text">
+            <h3 class="ask-post-title">Как сделать что-то полезное?</h3>
+            <p>У меня есть одна очень насущная проблема и вы должны мне помочь ее решить. Проблема заключается в...</p>
+            <p class="main-question-tags">Тэги: <a href="#">MySQL</a> <a href="#">C++</a> <a href="#">django</a> <a href="#">Python</a> </p>
+          </div>
+        </div>
+      </div>
+
+      {% for x in '123' %}
+      <div class="question-answer">
+        <div class="row">
+          <div class="col-md-2"> <img class=" img-circle" src="http://lorempixel.com/60/60">
+            <div class="row">
+              <button type="button" id="increaseButton" class="btn btn-success btn-xs">+</button>
+              <input type="text" id="vote" placeholder="vote" readonly />
+              <button type="button" id="decreaseButton" class="btn btn-danger btn-xs">-</button>
+            </div>
+          </div>
+          <div class="col-md-10 ">
+            <p>First of oil I would like to thonk you for the invitotion to porticipote in such о Russia is the huge territory which in mony respects needs to be render hobitoble</p>
+            <input type="checkbox" class="checkbox-right">
+            Правильно! </div>
+        </div>
+      </div>
+      {% endfor %}
+
+{% endblock content %}
+{% block footer_form %}
+      <textarea class="question-textarea" name="text-answer" cols="119" rows="5" placeholder="Напишите свой ответ здесь"></textarea>
+      <button type="submit" class="btn btn-default button-answer">Ответить!</button>
+{% endblock %}

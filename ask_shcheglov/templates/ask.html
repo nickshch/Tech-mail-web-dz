@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h2 class="asker-title">Новый вопрос</h2>
+            <div class="new-question-title">
+        <div class="row">
+          <div class="col-md-2">
+            <p>Вопрос</p>
+          </div>
+          <div class="col-md-10">
+            <input type="text" size="70">
+          </div>
+        </div>
+      </div>
+      <div class="new-question-text">
+        <div class="row">
+          <div class="col-md-2">
+            <p>Текст</p>
+          </div>
+          <div class="col-md-10">
+            <textarea name="comment" cols="72" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="new-question-tags">
+        <div class="row">
+          <div class="col-md-2">
+            <p>Тэги</p>
+          </div>
+          <div class="col-md-10">
+            <input type="text" size="70">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-10">
+            <button type="submit" class="btn btn-default">Спросить!</button>
+          </div>
+        </div>
+      </div>
+    {% endblock content %}

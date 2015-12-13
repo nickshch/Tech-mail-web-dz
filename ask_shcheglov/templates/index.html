@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block content_header %}<h1 class="collumn-header">Вопросы</h1> {% endblock %}
+{% for x in '123' %}
+      <div class="ask-post">
+        <div class="row">
+          <div class="col-md-2"> <img class=" img-circle" src="http://lorempixel.com/60/60">
+            <div class="row">
+              <button type="button" id="increaseButton" class="btn btn-success btn-xs">+</button>
+              <input type="text" id="vote" placeholder="vote" readonly />
+              <button type="button" id="decreaseButton" class="btn btn-danger btn-xs">-</button>
+            </div>
+          </div>
+          <div class="col-md-10 ">
+            <h3 class="ask-post-title"><a href="{%url 'question' %}">Как сделать что-то полезное?</a></h3>
+            <p>У меня есть одна очень насущная проблема и вы должны мне помочь ее решить. Проблема заключается в...</p>
+            <div class="row">
+              <div class="col-md-4 ask-main-post-answer"> <a href="{%url 'question' %}">ответов(4)</a> </div>
+              <div class="col-md-8 ask-main-post-tags">
+                <p>Тэги: <a href="#">MySQL</a> <a href="#">C++</a> <a href="#">django</a> <a href="#">Python</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endfor %}
+
+      {% include "pagination.html" %}
+
+
+{% endblock content %}
